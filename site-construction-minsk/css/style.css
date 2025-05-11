@@ -364,6 +364,7 @@ section{
 /* портфолио, карусель */
 .portfolio {
   background-color:  #595d4f;
+  padding-bottom: 260px;
 }
 .portfolio-section{
   background: #595D4F;
@@ -396,3 +397,90 @@ section{
   height: 100%;
   object-fit: cover;
 }
+/* бегущая строка  */
+
+.marquee-container {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  background: #595d4f;
+  padding: 10px 0;
+}
+.marquee-content {
+  display: inline-block;
+  padding-left: 100%; /* Начальное положение за пределами контейнера */
+  animation: marquee 15s linear infinite;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 126%;
+  letter-spacing: 0.4em;
+  text-transform: uppercase;
+  color: #d3c6b5;
+
+}
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}
+
+/* футер */
+.footer-img {
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center; /* Центрирование по горизонтали */
+  align-items: center; /* Центрирование по вертикали (если нужно) */
+  background-color: #000; /* Фон на случай, если изображение не покрывает полностью */
+}
+.footer-container{
+  background-color:#595d4f ;
+}
+.footer-img img {
+  width: 100%;
+  height: auto; /* Сохраняет пропорции изображения */
+  object-fit: cover; /* Заполняет контейнер с обрезкой краев */
+  object-position: center; /* Центрирует изображение в контейнере */
+}
+.footer-info__container{
+  padding-top: 44px;
+  padding-bottom: 80px;
+  max-width: 1231px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-info__contacts{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  /* padding-bottom: 80px; */
+}
+.footer-info__phone{
+  padding-bottom: 15px  ;
+}
+.footer-info__phone a{
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 126%;
+  letter-spacing: 0.4em;
+  text-transform: uppercase;
+  color: #d3c6b5;
+}
+.footer-info__mail a{
+  text-decoration: none ;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 126%;
+  letter-spacing: 0.4em;
+  text-transform: uppercase;
+  color: #d3c6b5;
+}
+/* адаптив 1200px*/
+@media(min-width:1413px){
+  
+}
+
+
