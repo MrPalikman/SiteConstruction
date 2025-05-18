@@ -123,6 +123,9 @@ section{
   text-transform: uppercase;
   color: #595d4f;
 }
+.intro__image{
+  max-height: 800px;
+}
 .intro__description{
   font-weight: 400;
   font-size: 28px;
@@ -362,6 +365,14 @@ section{
 }
 
 /* портфолио, карусель */
+.swiper-slide{
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+.swiper-slide img{
+  width: 100%;
+}
 .portfolio {
   background-color:  #595d4f;
   padding-bottom: 260px;
@@ -545,7 +556,20 @@ section{
   display: none;
  }
 }
-@media(max-width:720px){
-
+@media(max-width:780px){
+  .service__list {
+    display: grid;    
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1px;
+   }
+   .service__cart-title{
+    max-height: 71px;
+   }
+   .service__cart-title br {
+    display: none;
+  }
+  .footer-info{
+    padding: 10px;
+  }
 }
 
