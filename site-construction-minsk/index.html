@@ -10,9 +10,13 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="./css/style.css">
+  <!-- обновляем кеш -->
+  <link rel="stylesheet" href="./css/style.css?v=1.3">
+
   <link rel="stylesheet" href="swiper-local/swiper-bundle.min.css">
   <script src="swiper-local/swiper-bundle.min.js" defer></script>
-  <title>Document</title>
+  <script src="js/modal.js"></script>
+  <title>ремонт кыартир в Минске</title>
 </head>
 
 <body class="container">
@@ -106,7 +110,27 @@
               </div>
             </div>
           </div>
-          <p>список всех наших услуг</p>
+          <p id="servicesTrigger">список всех наших услуг</p>
+          <!-- модалка -->
+          <!-- Модальное окно -->
+          <div id="servicesModal">
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <h2>Наши услуги</h2>
+              <ul id="servicesList">
+                <li>Штукатурка стен</li>
+                <li>Шпатлёвка поверхностей под обои и окраску</li>
+                <li>Устройство стяжки пола, наливных полов</li>
+                <li>Окраска поверхностей</li>
+                <li>Облицовка плиткой поверхностей</li>
+                <li>Устройство покрытий полов из ламината, кварц-винила, линолеума</li>
+                <li>Устройство перегородок блочных или из ГКЛ</li>
+                <li>Установка дверей</li>
+                <li>Электромонтажные работы</li>
+                <li>Сантехнические работы</li>
+              </ul>
+            </div>
+          </div>
           <div class="callback-block">
             <div class="callback-title">давайте <br> созвонимся!</div>
 
@@ -232,6 +256,7 @@
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="js/swiper.js"></script>
   <script src="js/telegram.js"></script>
+  <script src="./js/modal.js"></script>
 
 </body>
 
